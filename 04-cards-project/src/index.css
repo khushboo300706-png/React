@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+}
+html, 
+body {
+  height: 100%;
+  width: 100%;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  background-color:#111;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.Card{
+  height: 350px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:all .3s ease-in-out;
+}
+.Card:hover{
+  transform: translateY(-10px);
+  box-shadow:#8b8b8b;
+}
+.Card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.top img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  padding: 4px; 
+}
+.top button{
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+  color: #b1b1b1;
+}
+.center{
+  margin-left: 15px;
+  padding-top: 2px;
+}
+
+.center h3{
+  font-size: 15px;
+  font-weight: 500;
+}
+.center h3 span{
+  font-size: 10px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+.center h2{
+  font-size: 20px;
+}
+.center .tag{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.center .tag h4{
+  font-size: 14px;
+  background-color: #dadada;
+  color: #111;
+  padding: 3px 6px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #b1b1b1;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bottom h3{
+  font-size: 15px;
+}
+.bottom p{
+  font-size: 10px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+.bottom button{
+  background-color: #111;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 7px;
+  border: 1px solid #111;
+}
